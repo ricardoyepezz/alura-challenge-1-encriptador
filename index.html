@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
-</head>
-<body>
-    <img class="logo" src="img/Logo.svg" alt="">
-    <input class="input" type="text" placeholder="Ingrese el texto aquí">
-    <script>
+  </head>
+  <body>
+    <img class="logo" src="img/Logo.svg" alt="" />
+    <input
+      id="input"
+      class="input"
+      type="text"
+      placeholder="Ingrese el texto aquí"
+    />
+    <div class="container-btn">
+      <span>Solo letras minúsculas y sin acentos</span>
+      <input class="btn-encriptar" id="btn-encriptar" type="button" value="Encriptar" id="btn-encriptar" />
+      <input class="btn-desencriptar" id="btn-desencriptar" type="button" value="Desencriptar" id="btn-desencriptar" />
+    </div>
+    <div class="outputDiv">
+    <img class="outputImage" src="img/outputImage.svg" alt="" />
 
-    </script>
-</body>
+        <h2 id="">Mensaje encriptado:</h2>
+        <input class="output" type="text" id="output" placeholder="Ningún mensaje fue encontrado"
+        />
+    </div>
+    
+    <script src="js/script.js"></script>
+  </body>
 </html>

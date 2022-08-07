@@ -1,3 +1,13 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
 body {
   background-color: #e5e5e5;
 }
@@ -27,4 +37,97 @@ body {
   font-size: 32px;
   line-height: 150%;
   color: #0a3871;
+  background-color: #e5e5e5;
+  border: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0a3871;
+}
+
+.btn-encriptar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  height: 67px;
+  background: #0a3871;
+  border-radius: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  width: 280px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.btn-desencriptar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0a3871;
+  order: 0;
+  flex-grow: 1;
+}
+
+.container-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 240px;
+  top: 500px;
+}
+
+.output {
+    border: none;
+    width: 328px;
+}
+
+.outputDiv {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    
+    /* White */
+    
+    background: #FFFFFF;
+    /* shadow */
+    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
 }

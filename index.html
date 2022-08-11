@@ -20,19 +20,17 @@
       <input class="btn-encriptar" id="btn-encriptar" type="button" value="Encriptar" id="btn-encriptar" />
       <input class="btn-desencriptar" id="btn-desencriptar" type="button" value="Desencriptar" id="btn-desencriptar" />
     </div>
+    <!-- Sección de mensaje encriptado -->
     <div class="outputDiv">
-      <div id="section1">
-  <img class="outputImage" src="img/outputImage.svg" alt="" />
-
-  <h2 id="">Mensaje encriptado:</h2>
-  <input class="output" type="text" id="output" placeholder="Ningún mensaje fue encontrado"
-  />
-  <input class="btn" type="submit" value="Copiar texto" id="btn-copy">
-</div>
-<div id="section2">
-  <p>Hola section 2</p>
-</div>
-
+      <aside id="sectionOne">
+        <img id="outputImage" src="img/outputImage.svg" alt="" />
+        <p id="textSectionOne">Ningún mensaje fue encontrado</p>
+        <p id="textTwoSectionOne">Ingresa el texto que desees encriptar o desencriptar</p>
+      </aside>
+      <aside id="sectionTwo">
+        <input class="output" type="text" id="output"/>
+        <input id="copyButton" type="submit" value="Copiar texto" id="btn-copy">
+      </aside>
     </div>
     
     <script src="js/script.js"></script>

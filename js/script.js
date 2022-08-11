@@ -5,7 +5,7 @@ const btnDesencriptar = document.getElementById("btn-desencriptar");
 const output = document.getElementById("output");
 const soloLetras = "^[a-z !ñ]+$";
 const btnCopiar = document.getElementById("btn-copy");
-document.getElementById("section2").style.display = "none"; // hide
+document.getElementById("sectionTwo").style.display = "none"; // hide
 
 
 //DEFINO EVENTOS DE LOS BOTONES
@@ -20,8 +20,8 @@ function encriptar(e) {
   e.preventDefault();
   output.value = "";
   let mensaje = input.value;
-  document.getElementById("section1").style.display = "none"; // hide
-  document.getElementById("section2").style.display = ""; // show
+  document.getElementById("sectionOne").style.display = "none"; // hide
+  document.getElementById("sectionTwo").style.display = ""; // show
 
   if (mensaje.match(soloLetras) != null) {
     let string = mensaje.split(" ");

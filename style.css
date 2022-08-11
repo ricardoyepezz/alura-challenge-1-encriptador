@@ -110,13 +110,7 @@ body {
   bottom: 72px;
 }
 
-.output {
-  border: none;
-  width: 328px;
-}
-
 .outputDiv {
-  position: absolute;
   width: 400px;
   height: 640px;
   margin-left: 1050px;
@@ -126,11 +120,80 @@ body {
   border-radius: 32px;
 }
 
-.outputImage {
-  position: absolute;
+
+/* sección uno de aside */
+
+#outputImage {
   width: 336px;
   height: 304px;
   padding-top: 100px;
-  padding-left: 40px;
+  margin-left: 32px;
+  margin-right: 32px;
+  order: 0;
 }
 
+#textSectionOne {
+  width: 336px;
+  height: 58px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+#textTwoSectionOne {
+  width: 336px;
+  height: 48px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+/* sección dos de aside */
+
+.output {
+  
+  border: none;
+  left: 1032px;
+  top: 72px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #495057;
+  margin-left: 32px;
+  margin-right: 32px;
+  text-align: center;
+}
+
+#copyButton {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+  position: absolute;
+  width: 336px;
+  height: 67px;
+  margin-left: 32px;
+  margin-right: 32px;
+ 
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+}

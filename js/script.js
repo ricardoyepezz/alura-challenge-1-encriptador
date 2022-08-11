@@ -4,13 +4,15 @@ const btnEncriptar = document.getElementById("btn-encriptar");
 const btnDesencriptar = document.getElementById("btn-desencriptar");
 const output = document.getElementById("output");
 const soloLetras = "^[a-z !ñ]+$";
-//const btnCopiar = document.getElementById('btn-copy');
+const btnCopiar = document.getElementById("btn-copy");
+document.getElementById("section2").style.display = "none"; // hide
+
 
 //DEFINO EVENTOS DE LOS BOTONES
 document.addEventListener("DOMContentLoaded", () => {
   btnEncriptar.addEventListener("click", encriptar);
   btnDesencriptar.addEventListener("click", desencriptar);
-  //btnCopiar.addEventListener('click', copiarTexto);
+  btnCopiar.addEventListener("click", copiarTexto);
 });
 
 //FUNCIONES DE ENCRIPTACION Y DESENCRIPTACION
@@ -18,6 +20,8 @@ function encriptar(e) {
   e.preventDefault();
   output.value = "";
   let mensaje = input.value;
+  document.getElementById("section1").style.display = "none"; // hide
+  document.getElementById("section2").style.display = ""; // show
 
   if (mensaje.match(soloLetras) != null) {
     let string = mensaje.split(" ");
@@ -67,4 +71,11 @@ function desencriptar(e) {
     //mostrarError("Solo se permiten letras minúsculas, sin acentos");
     return;
   }
+}
+
+function copiarTexto(e) {
+  e.preventDefault();
+  const mensaje = output.value;
+
+  navigator.clipboard.writeText(mensaje);
 }

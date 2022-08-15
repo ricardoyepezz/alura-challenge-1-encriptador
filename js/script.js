@@ -74,8 +74,8 @@ function desencriptar(e) {
 }
 
 function copiarTexto(e) {
+  console.log(output.value);
   e.preventDefault();
   const mensaje = output.value;
-
   navigator.clipboard.writeText(mensaje);
 }

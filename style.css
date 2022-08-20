@@ -25,6 +25,18 @@ body {
   top: 40px;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    position: absolute;
+    width: 60px;
+    height: 24px;
+    left: 5.21%;
+    right: 90.74%;
+    top: 6.25%;
+    bottom: 89.8%;
+  }
+}
+
 .input {
   position: absolute;
   width: 577px;
@@ -39,6 +51,16 @@ body {
   color: #0a3871;
   background-color: #e5e5e5;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .input {
+    position: absolute;
+    width: 688px;
+    left: 40px;
+    top: 240px;
+    font-size: 22px;
+  }
 }
 
 ::placeholder {
@@ -71,6 +93,34 @@ body {
   flex-grow: 1;
 }
 
+.container-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 240px;
+  bottom: 72px;
+}
+@media (max-width: 768px) {
+  .container-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 40px;
+    top: 836px;
+  }
+}
+
 .btn-desencriptar {
   box-sizing: border-box;
   display: flex;
@@ -95,19 +145,6 @@ body {
   color: #0a3871;
   order: 0;
   flex-grow: 1;
-}
-
-.container-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  position: absolute;
-  width: 680px;
-  height: 67px;
-  left: 240px;
-  bottom: 72px;
 }
 
 .outputDiv {

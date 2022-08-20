@@ -9,11 +9,11 @@ El objetivo de la aplicación es encriptar textos, así podrás intercambiar men
 
 Las "llaves" de encriptación que se utilizaron son las siguientes:
 
-La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
+1. La letra "e" es convertida para "enter"
+2. La letra "i" es convertida para "imes"
+3. La letra "a" es convertida para "ai"
+4. La letra "o" es convertida para "ober"
+5. La letra "u" es convertida para "ufat"
 
 Requisitos:
 - Debe funcionar solo con letras minúsculas

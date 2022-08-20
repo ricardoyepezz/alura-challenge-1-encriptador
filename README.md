@@ -3,6 +3,8 @@
 Este proyecto es parte del programa Oracle Next Education en donde se solicita emplear HTML y Javascript sin usar frameworks. 
 El objetivo es reforzar conocimientos de los cursos de Lógica de Programación.
 
+![Alt Text](/img/Animation2.gif) 
+
 El objetivo de la aplicación es encriptar textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
 
 Las "llaves" de encriptación que se utilizaron son las siguientes:
@@ -29,4 +31,3 @@ El resultado debe ser mostrado en la pantalla.
 Extras:
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
-![Alt Text](/img/Animation2.gif) 
